@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Test Parallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Microsoft Edge(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.blackTouch.testcases.newTabs">
+        <methods>
+          <include name="addCart" invocation-numbers="0"/>
+          <include name="captureScreenshot"/>
+          <include name="amountAdd" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </classes>
+  </test> <!-- Microsoft Edge(failed) -->
+  <test thread-count="1" parallel="tests" name="Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.blackTouch.testcases.newTabs">
+        <methods>
+          <include name="addCart" invocation-numbers="0"/>
+          <include name="captureScreenshot"/>
+          <include name="amountAdd" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="1" parallel="tests" name="Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.blackTouch.testcases.newTabs">
+        <methods>
+          <include name="addCart"/>
+          <include name="captureScreenshot"/>
+          <include name="amountAdd"/>
+          <include name="setup"/>
+          <include name="Login"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Test Parallel] -->

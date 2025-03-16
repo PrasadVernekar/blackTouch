@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="2" failed="4" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-16T16:37:02 IST" name="Test Parallel" finished-at="2025-03-16T16:39:02 IST" duration-ms="120657">
+    <groups>
+    </groups>
+    <test started-at="2025-03-16T16:37:02 IST" name="Microsoft Edge" finished-at="2025-03-16T16:38:07 IST" duration-ms="65343">
+      <class name="com.blackTouch.testcases.newTabs">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.blackTouch.testcases.newTabs@37fb0bed]" started-at="2025-03-16T16:37:02 IST" name="setup" finished-at="2025-03-16T16:37:21 IST" duration-ms="19384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.blackTouch.testcases.newTabs@37fb0bed]" started-at="2025-03-16T16:37:21 IST" name="Login" data-provider="loginData" finished-at="2025-03-16T16:37:35 IST" duration-ms="13554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="addCart(java.lang.String,java.lang.String)[pri:2, instance:com.blackTouch.testcases.newTabs@37fb0bed]" started-at="2025-03-16T16:37:35 IST" name="addCart" data-provider="loginData1" finished-at="2025-03-16T16:37:51 IST" duration-ms="16179" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Samsung galaxy s67] but found [Samsung galaxy s6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Samsung galaxy s67] but found [Samsung galaxy s6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at com.blackTouch.testcases.newTabs.addCart(newTabs.java:232)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method signature="amountAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.blackTouch.testcases.newTabs@37fb0bed]" started-at="2025-03-16T16:37:51 IST" name="amountAdd" data-provider="loginData3" finished-at="2025-03-16T16:38:07 IST" duration-ms="15678" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michael Scott]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234 4321 6789 9876]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[March]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=134.0.3124.72)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [37e375e73ba486ec9d7f6519e1e11567, clickElement {id=f.51BE127BE4F04E67984EC73A950430CD.d.18B625B52229DE69CEA8367336AEA19C.e.440}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60989}, msedge: {msedgedriverVersion: 134.0.3124.68 (3aef6e50b44d..., userDataDir: C:\Users\prasa\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60989/devtoo..., se:cdpVersion: 134.0.3124.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (37e375e73ba486ec9d7f6519e1e11567)] -> id: login2]
+Session ID: 37e375e73ba486ec9d7f6519e1e11567]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=134.0.3124.72)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [37e375e73ba486ec9d7f6519e1e11567, clickElement {id=f.51BE127BE4F04E67984EC73A950430CD.d.18B625B52229DE69CEA8367336AEA19C.e.440}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60989}, msedge: {msedgedriverVersion: 134.0.3124.68 (3aef6e50b44d..., userDataDir: C:\Users\prasa\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60989/devtoo..., se:cdpVersion: 134.0.3124.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (37e375e73ba486ec9d7f6519e1e11567)] -> id: login2]
+Session ID: 37e375e73ba486ec9d7f6519e1e11567
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at com.blackTouch.identities.ids.login(ids.java:62)
+at com.blackTouch.testcases.newTabs.amountAdd(newTabs.java:250)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountAdd -->
+        <test-method is-config="true" signature="captureScreenshot()[pri:0, instance:com.blackTouch.testcases.newTabs@37fb0bed]" started-at="2025-03-16T16:38:07 IST" name="captureScreenshot" finished-at="2025-03-16T16:38:07 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </test> <!-- Microsoft Edge -->
+    <test started-at="2025-03-16T16:38:07 IST" name="Chrome" finished-at="2025-03-16T16:38:58 IST" duration-ms="50950">
+      <class name="com.blackTouch.testcases.newTabs">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.blackTouch.testcases.newTabs@7cb502c]" started-at="2025-03-16T16:38:07 IST" name="setup" finished-at="2025-03-16T16:38:13 IST" duration-ms="5441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.blackTouch.testcases.newTabs@7cb502c]" started-at="2025-03-16T16:38:13 IST" name="Login" data-provider="loginData" finished-at="2025-03-16T16:38:26 IST" duration-ms="13774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="addCart(java.lang.String,java.lang.String)[pri:2, instance:com.blackTouch.testcases.newTabs@7cb502c]" started-at="2025-03-16T16:38:26 IST" name="addCart" data-provider="loginData1" finished-at="2025-03-16T16:38:42 IST" duration-ms="15922" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Samsung galaxy s67] but found [Samsung galaxy s6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Samsung galaxy s67] but found [Samsung galaxy s6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at com.blackTouch.testcases.newTabs.addCart(newTabs.java:232)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method signature="amountAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.blackTouch.testcases.newTabs@7cb502c]" started-at="2025-03-16T16:38:42 IST" name="amountAdd" data-provider="loginData3" finished-at="2025-03-16T16:38:58 IST" duration-ms="15470" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michael Scott]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234 4321 6789 9876]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[March]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a243c247d761ef79e53262662dd5855b, clickElement {id=f.92E53D4F2BD52DC9A7330705FC3F3050.d.A393F8D768775CD4AB5F30F6CD950FE2.e.470}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61036/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a243c247d761ef79e53262662dd5855b)] -> id: login2]
+Session ID: a243c247d761ef79e53262662dd5855b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a243c247d761ef79e53262662dd5855b, clickElement {id=f.92E53D4F2BD52DC9A7330705FC3F3050.d.A393F8D768775CD4AB5F30F6CD950FE2.e.470}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61036/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a243c247d761ef79e53262662dd5855b)] -> id: login2]
+Session ID: a243c247d761ef79e53262662dd5855b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at com.blackTouch.identities.ids.login(ids.java:62)
+at com.blackTouch.testcases.newTabs.amountAdd(newTabs.java:250)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountAdd -->
+        <test-method is-config="true" signature="captureScreenshot()[pri:0, instance:com.blackTouch.testcases.newTabs@7cb502c]" started-at="2025-03-16T16:38:58 IST" name="captureScreenshot" finished-at="2025-03-16T16:38:58 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </test> <!-- Chrome -->
+    <test started-at="2025-03-16T16:38:58 IST" name="Firefox" finished-at="2025-03-16T16:39:02 IST" duration-ms="4217">
+      <class name="com.blackTouch.testcases.newTabs">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:38:58 IST" name="setup" finished-at="2025-03-16T16:39:02 IST" duration-ms="4164" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:100)
+at com.blackTouch.testcases.baseSetup.setup(baseSetup.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:39:02 IST" name="Login" data-provider="loginData" finished-at="2025-03-16T16:39:02 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:100)
+at com.blackTouch.testcases.baseSetup.setup(baseSetup.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="addCart(java.lang.String,java.lang.String)[pri:2, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:39:02 IST" name="addCart" data-provider="loginData1" finished-at="2025-03-16T16:39:02 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:100)
+at com.blackTouch.testcases.baseSetup.setup(baseSetup.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method signature="amountAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:39:02 IST" name="amountAdd" data-provider="loginData3" finished-at="2025-03-16T16:39:02 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwerty1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Casio@27]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michael Scott]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234 4321 6789 9876]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[March]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DECODING', ip: '192.168.29.12'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:100)
+at com.blackTouch.testcases.baseSetup.setup(baseSetup.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountAdd -->
+        <test-method is-config="true" signature="captureScreenshot()[pri:0, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:39:02 IST" name="captureScreenshot" finished-at="2025-03-16T16:39:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.blackTouch.testcases.newTabs@1b8a29df]" started-at="2025-03-16T16:39:02 IST" name="tearDownReport" finished-at="2025-03-16T16:39:03 IST" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.blackTouch.testcases.newTabs -->
+    </test> <!-- Firefox -->
+  </suite> <!-- Test Parallel -->
+</testng-results>

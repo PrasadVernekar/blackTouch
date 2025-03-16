@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Parallel" thread-count="1" parallel="tests">
+	<test name="Microsoft Edge">
+		<parameter name="browser" value="IE">
+			<classes>
+				<class name="com.blackTouch.testcases.newTabs"></class>
+			</classes>
+		</parameter>
+		
+		</test>
+		<test name="Chrome">
+		<parameter name="browser" value="chrome">
+			<classes>
+				<class name="com.blackTouch.testcases.newTabs"></class>
+			</classes>
+		</parameter>
+		</test>
+		
+		<test name="Firefox">
+		<parameter name="browser" value="firefox">
+			<classes>
+				<class name="com.blackTouch.testcases.newTabs"></class>
+			</classes>
+		</parameter>
+	</test>
+</suite>     
+
+
+
+
+
